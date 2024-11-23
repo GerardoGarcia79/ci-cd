@@ -8,6 +8,8 @@ export default {
     "\\.(css|scss)$": "identity-obj-proxy", // Mock CSS/SCSS imports
     "\\.svg$": "<rootDir>/__mocks__/fileMock.js", // Mock SVG files
   },
-  //   moduleFileExtensions: ["js", "jsx"],
-  setupFilesAfterEnv: ["<rootDir>/src/setupTests.js"],
+  globals: {
+    __DEV__: true,
+  },
+  setupFilesAfterEnv: ["<rootDir>/test/setup.js"],
 };
