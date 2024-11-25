@@ -4,7 +4,7 @@ on:
   push:
     branches:
       - main
-      - features
+      - features/add-new-version
   pull_request:
 
 jobs:
