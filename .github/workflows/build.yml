@@ -6,14 +6,7 @@ on:
     branches: [main, features]
     types:
       - completed
-  push:
-    branches:
-      - main
-      - features
-  pull_request:
-    branches:
-      - main
-      - features
+
 jobs:
   ci-build:
     runs-on: ubuntu-latest
