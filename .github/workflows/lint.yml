@@ -8,7 +8,7 @@ on:
   pull_request:
     branches:
       - main
-      - features
+      - features/add-new-version
 jobs:
   ci-eslint:
     runs-on: ubuntu-latest

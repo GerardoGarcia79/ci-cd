@@ -3,7 +3,7 @@ name: Test
 on:
   workflow_run:
     workflows: [Build]
-    branches: [main, features]
+    branches: [main, features/add-new-version]
     types:
       - completed
 

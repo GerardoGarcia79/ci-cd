@@ -3,7 +3,7 @@ name: Build
 on:
   workflow_run:
     workflows: [Eslint]
-    branches: [main, features]
+    branches: [main, features/add-new-version]
     types:
       - completed
 
