@@ -1,17 +1,10 @@
 name: Test
 
 on:
-  pull_request:
-    branches:
-      - main
-  workflow_run:
-    workflows: [Build]
-    types:
-      - requested
+  workflow_call:
 
 jobs:
   ci-test:
-    if: ${{ github.event_name == 'pull_request' && github.event.workflow_run.conclusion == 'success' }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
