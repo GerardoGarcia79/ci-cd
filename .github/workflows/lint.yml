@@ -1,11 +1,7 @@
 name: Eslint
 
 on:
-  push:
-    branches:
-      - main
-      - features
-  pull_request:
+  workflow_call:
 
 jobs:
   ci-eslint:
