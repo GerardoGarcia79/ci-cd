@@ -5,6 +5,7 @@ on:
     workflows: [Build]
     types:
       - completed
+  pull_request:
 
 jobs:
   ci-test:

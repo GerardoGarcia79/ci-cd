@@ -5,6 +5,7 @@ on:
     workflows: [Eslint]
     types:
       - completed
+  pull_request:
 
 jobs:
   ci-build:
