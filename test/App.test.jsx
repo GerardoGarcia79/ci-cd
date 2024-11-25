@@ -4,7 +4,7 @@ import App from "../src/App";
 describe("App", () => {
   it('should render the heading', () => {
     render(<App />);
-    const heading = screen.getByText(/5.0/i);
+    const heading = screen.getByText(/6.0/i);
     expect(heading).toBeInTheDocument();
   })
 });
