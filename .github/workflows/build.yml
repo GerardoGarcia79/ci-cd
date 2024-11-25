@@ -1,9 +1,6 @@
 name: Build
 
 on:
-  pull_request:
-    branches:
-      - main
   workflow_run:
     workflows: [Eslint]
     types:
@@ -11,7 +8,7 @@ on:
 
 jobs:
   ci-build:
-    if: ${{ github.event_name == 'pull_request' || github.event.workflow_run.conclusion == 'success' }}
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
